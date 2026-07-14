@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sacred-six": {
+      "type": "http",
+      "url": "https://orchestrator.starseed-collective.com/mcp/member"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "starseed",
+  "owner": {
+    "name": "Starseed Collective",
+    "url": "https://starseed-collective.com"
+  },
+  "plugins": [
+    {
+      "name": "sacred-six",
+      "source": "./plugins/sacred-six",
+      "description": "Vanessa's Sacred Six — your blueprint, her knowledge base, in your Claude"
+    }
+  ]
+}

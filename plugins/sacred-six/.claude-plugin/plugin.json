@@ -1,0 +1,11 @@
+{
+  "name": "sacred-six",
+  "version": "1.0.0",
+  "description": "Vanessa's Sacred Six — your blueprint, her knowledge base, in your Claude",
+  "author": {
+    "name": "Starseed Collective",
+    "url": "https://starseed-collective.com"
+  },
+  "homepage": "https://starseed-collective.com/learn/connect",
+  "keywords": ["sacred-six", "starseed", "coaching", "business", "blueprint"]
+}
