@@ -1,0 +1,8 @@
+# Built binaries — reproduced via `npm install` + `mcpb pack`, never committed
+*.mcpb
+# Bundled deps
+node_modules/
+# macOS junk
+.DS_Store
+# INTERNAL operator tool — hand-delivered, must NOT be published to this PUBLIC repo
+desktop-extension/starbase/

@@ -1,0 +1,51 @@
+{
+  "manifest_version": "0.3",
+  "name": "sacred-six",
+  "display_name": "Sacred Six",
+  "version": "1.1.0",
+  "description": "Vanessa's Sacred Six — your blueprint and her knowledge base, inside Claude Desktop and Cowork.",
+  "long_description": "Bring Vanessa's Sacred Six frameworks and course library into Claude Desktop and Cowork. Paste your personal connector URL from starseed-collective.com/learn/connect and the Sacred Six tools become available in your chats — kb_search, six_overview, and more, scoped to your membership.",
+  "author": {
+    "name": "Starseed Collective",
+    "url": "https://starseed-collective.com"
+  },
+  "homepage": "https://starseed-collective.com/learn/connect",
+  "documentation": "https://starseed-collective.com/learn/connect",
+  "server": {
+    "type": "node",
+    "entry_point": "node_modules/mcp-remote/dist/proxy.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/node_modules/mcp-remote/dist/proxy.js",
+        "${user_config.connector_url}"
+      ]
+    }
+  },
+  "user_config": {
+    "connector_url": {
+      "type": "string",
+      "title": "Your connector URL",
+      "description": "Paste your personal connector URL from starseed-collective.com/learn/connect. It looks like https://orchestrator.starseed-collective.com/mcp/m/… — keep it private, it's like a password.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "tools": [
+    { "name": "kb_search", "description": "Search Vanessa's knowledge base" },
+    { "name": "kb_fetch_chunk", "description": "Fetch a full passage from a knowledge-base result" },
+    { "name": "kb_list_courses", "description": "List Vanessa's available courses" },
+    { "name": "kb_related_unowned", "description": "Find related teaching you don't yet own" },
+    { "name": "six_overview", "description": "Sacred Six blueprint overview and operating mode" },
+    { "name": "six_pillar_guide", "description": "Vanessa's guide for a specific pillar" },
+    { "name": "six_check_pillar", "description": "Check a pillar's progress" },
+    { "name": "six_launch_guide", "description": "Launch guidance grounded in your blueprint" }
+  ],
+  "keywords": ["sacred-six", "starseed", "coaching", "business", "blueprint"],
+  "compatibility": {
+    "platforms": ["darwin", "win32"],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
+}
